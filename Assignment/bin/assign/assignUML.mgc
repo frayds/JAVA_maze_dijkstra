@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="assign.GUISolution.GUIDrawingPanel" x="768" y="416">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="assign.Position"/>
+        <Communication destinationClassName="assign.BFSFinder"/>
+    </Class>
+    <Class name="assign.LoadMaze" x="611" y="557">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assign.DIR" x="545" y="470">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assign.Position" x="408" y="458">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assign.BFSFinder" x="19" y="285">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="assign.Position"
+            endpointName="preElement" kind="Simple">
+            <Point x="224" y="599"/>
+            <Point x="463" y="602"/>
+        </Association>
+        <Association destinationClassName="assign.GUISolution.CELL"
+            endpointName="road" kind="Simple">
+            <Point x="348" y="305"/>
+        </Association>
+        <Association destinationClassName="assign.Position"
+            endpointName="Teleporter" kind="Simple"/>
+        <Association destinationClassName="assign.Position"
+            endpointName="start" kind="Simple">
+            <Point x="266" y="550"/>
+            <Point x="342" y="582"/>
+            <Point x="357" y="575"/>
+        </Association>
+        <Association destinationClassName="assign.Position"
+            endpointName="end" kind="Simple">
+            <Point x="275" y="514"/>
+        </Association>
+        <Association destinationClassName="assign.GUISolution.CELL"
+            endpointName="cell" kind="Simple">
+            <Point x="277" y="103"/>
+        </Association>
+        <Association destinationClassName="assign.Position"
+            endpointName="LandingCell" kind="Simple">
+            <Point x="442" y="383"/>
+        </Association>
+        <Communication destinationClassName="assign.Position"/>
+    </Class>
+    <Class name="assign.Main" x="907" y="107">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assign.GUISolution.CELL" x="417" y="45">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assign.GUISolution" x="593" y="138">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="assign.GUISolution.CELL"
+            endpointName="cell" kind="Simple"/>
+        <Association
+            destinationClassName="assign.GUISolution.GUIDrawingPanel"
+            endpointName="panel" kind="Simple"/>
+        <Communication destinationClassName="assign.GUISolution.GUIDrawingPanel"/>
+        <Communication destinationClassName="assign.LoadMaze"/>
+        <Communication destinationClassName="assign.Position"/>
+        <Communication destinationClassName="assign.BFSFinder"/>
+    </Class>
+</ClassDiagram>
