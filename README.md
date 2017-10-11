@@ -13,4 +13,5 @@ JAVA自定义迷宫查询路径(dijkstra算法)
 ## Tests 项目运行效果
 ### ![](https://github.com/frayds/JAVA_maze_dijkstra/raw/master/demo_pictures/maze.png)
 ### ![](https://github.com/frayds/JAVA_maze_dijkstra/raw/master/demo_pictures/maze_change.png)
-
+## Contributors 参与者介绍
+濮一帆:advanced Computer Science, Department of Computer Science, University of Sheffield
